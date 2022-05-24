@@ -1,0 +1,55 @@
+version: "2"
+
+networks:
+  covid_grm_report_default:
+    external: true
+  internal:
+    external: false
+
+x-redash-service: &redash-service
+  build: .
+  image: redash:custom
+  depends_on:    
+    - redis
+  env_file: /opt/redash/env
+  volumes:
+   - /opt/redash/json_ds.py:/app/redash/query_runner/json_ds.py
+   - /opt/redash/maps/granma.json:/app/client/dist/data/0962607.granma.geo.json   
+  restart: always
+  networks:
+  - internal
+
+services:
+  server:
+    <<: *redash-service
+    command: server
+    ports:
+      - "5000:5000"
+    environment:
+      REDASH_WEB_WORKERS: 4
+    networks:
+      - internal
+      - covid_grm_report_default
+  scheduler:
+    <<: *redash-service
+    command: scheduler
+    environment:
+      QUEUES: "celery"
+      WORKERS_COUNT: 1
+  scheduled_worker:
+    <<: *redash-service
+    command: worker
+    environment:
+      QUEUES: "scheduled_queries,schemas"
+      WORKERS_COUNT: 1
+  adhoc_worker:
+    <<: *redash-service
+    command: worker
+    environment:
+      QUEUES: "queries"
+      WORKERS_COUNT: 2
+  redis:
+    image: redis:5.0-alpine
+    restart: always
+    networks:
+      - internal

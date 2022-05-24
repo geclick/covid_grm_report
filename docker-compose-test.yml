@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=covid19grm
+      - POSTGRES_USER=covid19grm
+      - POSTGRES_PASSWORD=covid19grm
+    volumes:
+      - data-db:/var/lib/postgresql/data/
+
+  api:
+    build: ./app
+    environment:
+      - DEBUG=True
+    depends_on:
+      - db
+
+volumes:
+  data-db:

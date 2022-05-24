@@ -1,0 +1,58 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=covid19grm
+      - POSTGRES_USER=covid19grm
+      - POSTGRES_PASSWORD=covid19grm
+    volumes:
+      - data-db:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  api:
+    build: ./app
+    volumes:
+      - ./app:/app
+      - data-media:/app/unprotected/shared:z
+      - data-shared:/app/media/shared:z
+      - static_volume:/app/static:z
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  sdc:
+    image: streamsets/datacollector:3.18.1
+    volumes:
+      - data-shared:/opt/sdcvol:z
+    restart: unless-stopped
+
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./nginx/certs:/etc/nginx/conf.d/certs
+      - ./nginx/config/conf.d:/etc/nginx/conf.d
+      - static_volume:/var/www/covid19_grm_report/static:z
+      - data-media:/var/www/covid19_grm_report/unprotected/shared:z
+      - data-shared:/var/www/covid19_grm_report/media/shared:z
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  data-shared:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /home/michel/sdcvol
+  data-media:
+  data-db:
+  static_volume:
+  certs_path:

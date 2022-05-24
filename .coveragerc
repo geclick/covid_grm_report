@@ -1,0 +1,4 @@
+[run]
+source = merces/rrhh, merces/nucleo, merces/organizacion
+omit = *migrations*, *test*, merces/libs/*, merces/MERCES/*
+

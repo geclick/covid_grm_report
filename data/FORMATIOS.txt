@@ -1,0 +1,416 @@
+Notas de formato:
+
+- Revisar formato de la data de HIGIENE pues en algunos caso estan incorrecto 
+  los encabezados de los ficheros:
+
+Definir la estructura para que cumpla con el requisito:
+
+CÓDIGO
+ID PROVINCIA
+NOMBRE Y APELLIDOS
+EDAD	
+SEXO	
+C IDENTIDAD/ PASAPORTE
+DIRECCION
+AREA DE SALUD
+MUNICIPIO
+PROVINCIA
+CONDICIÓN
+PAÍS DE PROCEDENCIA
+F INICIO SÍNTOMAS
+FECHA DE TOMA DE MUESTRA
+TIPO DE MUESTRA
+PROCEDENCIA DE LA ENTREGA
+RESULTADO
+FECHA/ INICIO SÍNTOMAS
+CT
+FECHA DE SALIDA	
+
+
+Formato placas:
+
+GRANMA:
+
+R	
+PRIORIDAD	
+NUMERO EN EL LAB MGRM
+ID DE LA PROVINCIA 	
+FECHA ENTRADA DE LAS MUESTRAS 	
+ESTADO DE LAS MUESTRAS	
+HORA DE ENTRADA 	
+INDICADO POR 	
+NOMBRES Y APELLIDOS	
+Edad	
+Sexo	
+d/M/a	
+Direccion	
+A/Salud	
+MUNICIPIO	
+PROVINCIA	
+MOTIVO	
+PAIS DE PROCEDENCIA	
+FIS	
+FTM	
+Tpo Muestra	
+Prov./procedencia de la Muestra	
+PCR	
+CT	
+Fecha Resultado	
+NO. DE PLACA	
+Observaciones
+
+
+SANTIAGO:
+
+CODIGO LBM
+ID MUESTRA DEL AREA
+FECHA	
+NOMBRE Y APELLIDOS
+EDAD	
+SEXO	
+C IDENTIDAD/ PASAPORTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENFCIA	
+F INICIO SÍNTOMAS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENFCIA DE LA ENFTREGA	
+RESULTADO	
+CUÁL 	
+CT	
+Numero de Placa 	
+FECHA DE RESULTADO
+
+GUANTANAMO:
+CÓD LBM	
+CÓD AREA SALUD	
+FECHA RECEP. LBM	
+NOMBRE Y APELLIDOS	
+EDAD
+D/M/A	
+SEXO	
+COLOR DE PIEL	
+C IDENTIDAD/ PASAP0RTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+F. I. S.	
+FECHA T.M	
+FIEBRE	
+RINORREA	
+CONGESTION NASAL	
+TOS	
+EXPECTORACION	
+DOLOR DE GARGANTA	
+CEFALEA	
+DIFICULTAD RESPIRATORIA	
+OTROS (ESPECIFICAR)	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA ENTREGA	
+RESULTADO	
+CT	
+OBSERVACIÓN	
+FECHA RESUL	
+PLACA NÚMERO	
+CONTACTO DEL CASO CONFIRMADO	
+RELACION CON EVENTO	
+TOTAL DE CONTACTOS
+
+HOLGUIN:
+R	
+Priorizado	
+NUMERO EN EL LAB MHLG	
+ID DE LA PROVINCIA 	
+FECHA ENTRADA DE LAS MUESTRAS 	
+ESTADO DE LAS MUESTRAS	
+HORA DE ENTRADA 	
+INDICADO POR 	
+NOMBRES Y APELLIDOS	
+Edad	
+Sexo	
+d/M/a	
+Direccion	
+A/Salud	
+MUNICIPIO	
+PROVINCIA	
+MOTIVO	
+PAIS DE PROCEDENCIA	
+FIS	
+FTM	
+Tpo Muestra	
+Prov./procedencia de la Muestra	
+PCR	
+CT	
+Fecha Resultado	
+Observaciones
+
+TUNAS:
+No	
+Número	
+Nombres y Apellidos 	
+Edad	
+Sexo	
+Dirección 	
+Grupo pesquisa	
+Síntomas si	
+Síntomas no	
+FIS	
+FTM	
+A Salud	
+Municipio	
+Hospital 
+Procedencia 	
+Resultados 
+
+CAMAGUEY:
+NO. DE CORRIDAS
+CÓDIGO	
+ID PROV.
+NOMBRE Y APELLIDOS	
+EDAD	
+SEXO
+C IDENTIDAD/ PASAPORTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+FIS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA MUESTRA	
+RESULTADO	
+CT	
+FECHA DE SALIDA
+
+CIEGODEAVILA:
+CÓDIGO	
+ID PROVINCIA	
+NOMBRE Y APELLIDOS	
+EDAD	
+SEXO	
+C IDENTIDAD/ PASAPORTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+F INICIO SÍNTOMAS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA ENTREGA	
+RESULTADO	
+CT	
+FECHA DE SALIDA	
+OBSERVACIONES	
+SALA								
+
+CIENFUEGOS:
+CORRIDA	
+CODIGO	
+ID PROVINCIA	
+NOMBRE Y APELLIDOS	
+EDAD	
+SEXO	
+CARNET	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+F INICIO SÍNTOMAS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA ENTREGA	
+RESULTADO	
+CT GEN ORF	
+ct gen E	
+CT GEN N	
+FECHA DE SALIDA	
+FECHAENTRADA
+
+VILLACLARA:
+
+ID PROVINCIA	
+NOMBRE Y APELLIDOS	
+EDAD	
+SEXO	
+C IDENTIDAD/ PASAPORTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+F INICIO SÍNTOMAS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA ENTREGA	
+RESULTADOS	
+CT	
+FECHA DE SALIDA
+
+MATANZAS:
+
+No. Muestra	
+No. Paquete	
+VIP	
+Tipo de sujeto	
+Nombre(s) y Apellidos	
+No. Carné de Identidad	
+No. Pasaporte	
+Edad	
+Sexo	
+Provincia	
+Municipio	
+Teléfono de contacto 	
+E-mail de contacto	
+Dirección particular	
+Area de salud	
+Hospital	
+Centro de aislamiento	
+Laboratorio	
+Punto de entrada al país	
+País de procedencia	
+Tipo de estudio	
+Fecha de la toma de la muestra	
+Tipo de muestra	
+Impresión diagnóstica	
+Fecha de inicio de los síntomas	
+RESULTADO
+
+IPK:
+
+Id IPK	
+Id Prov	
+Nombres y Apellidos	
+Tipo de Estudio	
+CI o PASAPORTE	
+Edad	
+Provincia	
+Municipios	
+Hospitales	
+Dirección Particular	
+Fecha entrada Muestra al Laborat	
+Resultado_f	
+Valor CT_f
+Gen_f		
+Parte_f
+Fecha Salida_F
+
+HABANA:
+
+#/CANT	
+CÓDIGO HODFR	
+ID PROVINCIA	
+NOMBRE Y APELLIDOS	
+EDAD	
+SEXO	
+C IDENTIDAD/ PASAPORTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+F INICIO SÍNTOMAS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA ENTREGA	
+RESULTADO	
+CT	
+FECHA DE SALIDA
+
+ARTEMISA:
+
+No. Muestra	
+No. Paquete	
+VIP	
+Tipo de sujeto	
+Nombre(s) y Apellidos	
+No. Carné de Identidad	
+No. Pasaporte	
+Edad	
+Sexo	
+Provincia	
+Municipio	
+Teléfono de contacto	
+E-mail de contacto	
+Dirección particular	
+Area de salud	
+Hospital	
+Centro de aislamiento	
+Laboratorio	
+Punto de entrada al país	
+País de procedencia	
+Tipo de estudio	
+Fecha de la toma de la muestra	
+Tipo de muestra	
+Impresión diagnóstica	
+Fecha de inicio de los síntomas	
+Resultado	
+CT
+
+PINARDELRIO:
+
+NUM LBMPR	
+NUM DIA	
+FECHA DIA	
+COD AREA	
+NOMBRE Y APELLIDOS	
+EDAD	
+SEXO
+C IDENTIDAD PASAPORTE	
+DIRECCIÓN	
+AREA DE SALUD	
+MUNICIPIO	
+PROVINCIA	
+CONDICIÓN	
+PAIS DE PROCEDENCIA	
+F INICIO SÍNTOMAS	
+FECHA DE TOMA DE MUESTRA	
+TIPO DE MUESTRA	
+PROCEDENCIA DE LA ENTREGA	
+FECHA ENTRADA AL LABORATORIO	
+RESULTADO	
+CT:N	
+CT:ORF	
+CT:E	
+FECHA DE SALIDA	
+PLACA
+
+
+Formato Base de datos de resultados epidemiología:
+
+Variables:
+
+covid+	
+No PCR Realizado	
+No Muestra	
+Laboratorio	
+Nombres y Apellidos	
+Edad	
+Sexo
+Direccion	
+Municipio	
+Aislamiento	
+FIS	
+FTM	
+Muestra	
+Fecha Envio	
+Resultados	
+Fecha resultado	
+PCR de los Contactos y Viajeros	
+Condicion	
+Pais
+Observacion																																																																						
